@@ -30,10 +30,10 @@ Details see 'ReadMe.docx'. <br>
 * Please run the ‘Area_Threshold.py’ to compute the area threshold of A or M and adjust the area threshold in config folder. The other parameters in config file can also be adjusted.<br>
 * Please run the ‘Identification_A.py’ or ‘Identification_M.py’ to count the fission tracks of ‘A’ or ‘M’. (Final step)<br>
 
-## Hardware used
+## Hardware used in paper
 
-CPU: Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz, 32GB memory<br>
-GPU: NVIDIA GeForce RTX 2080 Ti, 12GB GPU memory<br>
+CPU: Intel(R) Core(TM) i9-10900K CPU @ 3.70GHz, 64GB memory<br>
+GPU: NVIDIA GeForce RTX 3090, 24GB GPU memory<br>
 
 ## Contact
 
