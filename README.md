@@ -1,5 +1,5 @@
 # Automatic_FissionTrack_identification
-Automatic identification of semi-fission tracks on apatite and mica using a deep learning method.
+Automatic identification of semi-tracks on apatite and mica using a deep learning method.
 
 ## Requirements
 * (1) CUDA (version of 11.1);  (2)	cuDNN (version of 8.1.1)<br>
@@ -32,7 +32,7 @@ Details see 'ReadMe.docx'. <br>
 
 ## Hardware used in paper
 
-CPU: Intel(R) Core(TM) i9-10900K CPU @ 3.70GHz, 64GB memory<br>
+CPU: Intel(R) Core(TM) i9-10900K, 64GB RAM<br>
 GPU: NVIDIA GeForce RTX 3090, 24GB GPU memory<br>
 
 ## Contact
