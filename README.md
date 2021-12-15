@@ -17,12 +17,12 @@ Details see 'ReadMe.docx'. <br>
 
 **`2.　Multi-scale boundary extraction`**<br>
 * Please download the pretrained model from  https://download.pytorch.org/models/vgg16-397923af.pth <br>
-* Please run the ‘Train_HED(Contains_FT).py’ to train the HED model. The boundary extraction networks of ‘A’ and ‘M’ are together. The filenames of training images are from the ‘Train_HED(Contains_FT).py’ file in FT_Data.<br>
+* Please run the ‘Train_HED(Contains_FT).py’ to train the HED model (We also provided a trained model can be used directly at https://doi.org/10.5281/zenodo.5783272). The boundary extraction networks of ‘A’ and ‘M’ are together. The filenames of training images are from the ‘Train_HED(Contains_FT).py’ file in FT_Data.<br>
 * Please run the ‘Test_HED_FT.py’ to predict the multi-scale boundary of a new image, and put the multi-scale boundary images into the corresponding folders in FT_Data.<br>
 
 **`3.　Semantic segmentation`**<br>
 * Please download the pretrained model from  https://download.pytorch.org/models/resnet101-5d3b4d8f.pth <br>
-* Please run the ‘Train_Segmentation_FT.py’ to train the semantic segmentation network, which needs an input HED model, so the HED should be trained before. The semantic segmentation networks of ‘A’ and ‘M’ are different. The filenames of training images are from the ‘train_M_Seg.csv’ or ‘train_A_Seg.csv’ file in FT_Data.<br>
+* Please run the ‘Train_Segmentation_FT.py’ to train the semantic segmentation network, which needs an input HED model, so the HED should be trained before (We also provided a trained model can be used directly at https://doi.org/10.5281/zenodo.5783272). The semantic segmentation networks of ‘A’ and ‘M’ are different. The filenames of training images are from the ‘train_M_Seg.csv’ or ‘train_A_Seg.csv’ file in FT_Data.<br>
 * Please run the ‘Test_Segmentation_FT.py’ to predict the refined semantic segmentation result of a new image, and put the result images into the corresponding folders in FT_Data.<br>
 
 **`4.　Counting`**<br>
