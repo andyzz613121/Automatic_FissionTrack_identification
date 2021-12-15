@@ -65,7 +65,7 @@ for epoch in range(200):
 
             predect = transforms.ToPILImage()(predect)
             predect = predect.convert('RGB')
-            predect_fn = 'FT_Edge\\result\\'+str(epoch)+'_'+str(layer)+'pre.png'
+            predect_fn = 'FT_Edge\\result\\Model_BE\\'+str(epoch)+'_'+str(layer)+'pre.png'
             predect.save(predect_fn)
 
             layer += 1
@@ -74,14 +74,14 @@ for epoch in range(200):
         label = labels[0].reshape(predects[0].shape[1],predects[0].shape[2])
         label = transforms.ToPILImage()(label)
         label = label.convert('RGB')
-        label_fn = 'FT_Edge\\result\\' + str(epoch) + 'lab.png'
+        label_fn = 'FT_Edge\\result\\Model_BE\\' + str(epoch) + 'lab.png'
         label.save(label_fn)
         
         img = transforms.ToPILImage()(raw_images[0].cpu())
-        img_fn = 'FT_Edge\\result\\' + str(epoch) + 'img.png'
+        img_fn = 'FT_Edge\\result\\Model_BE\\' + str(epoch) + 'img.png'
         img.save(img_fn)
 
     # save model
     if epoch % 10 == 0:
-        image_model_name = 'FT_Edge\\result\\HED_model' + str(epoch) + '.pkl'
+        image_model_name = 'FT_Edge\\result\\Model_BE\\HED_model' + str(epoch) + '.pkl'
         torch.save(Hed_IMG, image_model_name)

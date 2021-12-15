@@ -13,7 +13,7 @@ AM_para = 'M'
 base_folder = 'FT_Data\\testing\\B1\\'
 img_folder = base_folder + 'image\\' + AM_para + '\\'
 HED_folder = base_folder + 'HED\\' + AM_para + '\\'
-HED_model_filename = 'FT_Edge\\result\\HED_model100.pkl'
+HED_model_filename = 'FT_Edge\\result\\Model_BE\\HED_model100.pkl'
 
 if os.path.exists(HED_folder) == False:
     os.makedirs(HED_folder)
