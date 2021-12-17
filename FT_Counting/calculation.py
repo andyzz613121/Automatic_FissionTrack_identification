@@ -406,7 +406,7 @@ def calculate_M_num(M_config_dict, seg_path, hed_path, M_img_path, R_img_path, a
     track_num = 0
     track_position_list = []
 
-    # Draw contours of objects (normal): Step 4
+    # Draw contours of objects (single): Step 6
     for n, contour in enumerate(contours_small):
         if contour_is_in_area(contour, area, area_flag) == True:
             x, y = contour_center(contour)
@@ -423,7 +423,7 @@ def calculate_M_num(M_config_dict, seg_path, hed_path, M_img_path, R_img_path, a
             track_position_list.append([x,y,2])
             track_num += 1
 
-    # Draw contours of objects k-means flag 3&4: Step 6
+    # Draw contours of objects k-means flag 3&4: Step 7
     for contour in k_means_flag_countour1:
         if contour_is_in_area(contour, area, area_flag) == True:         
             x, y = contour_center(contour)
