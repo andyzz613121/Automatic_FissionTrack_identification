@@ -36,7 +36,7 @@ def test_model(img_filename, HED_model_path, Seg_model_path):
     return img_pre
 
 
-AM_para = 'M'
+AM_para = 'M'   # OR A
 base_folder = 'FT_Data\\testing\\B1\\'
 img_folder = base_folder + 'image\\' + AM_para + '\\'
 Seg_folder = base_folder + 'Seg\\' + AM_para + '\\'
@@ -44,8 +44,9 @@ Model_folder = 'FT_Segmentation\\result\\Model_SS' + AM_para
 if os.path.exists(Seg_folder) == False:
     os.makedirs(Seg_folder)
 
-img_w = 2080
-img_h = 1540
+img_w = 2080   #1600 if images in yang2016
+img_h = 1540   #1200 if images in yang2016
+
 # Results can obtained by ensemble learning of several models output at different epoch(optional)
 model_No_list = ['100', '150', '200']
 

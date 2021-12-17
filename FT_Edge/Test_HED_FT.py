@@ -9,7 +9,7 @@ import torchvision.transforms as transforms
 
 from dataset import HED_Dataset
 
-AM_para = 'M'
+AM_para = 'M'  # OR A
 base_folder = 'FT_Data\\testing\\B1\\'
 img_folder = base_folder + 'image\\' + AM_para + '\\'
 HED_folder = base_folder + 'HED\\' + AM_para + '\\'
